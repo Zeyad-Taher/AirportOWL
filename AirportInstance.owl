@@ -1,0 +1,769 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#"
+     xml:base="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#compatibleWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#compatibleWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Gate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Aircraft"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#hasExit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#hasExit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Runway"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Taxiway"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#hasGate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#hasGate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airfield"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Gate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#hasGroundSurface -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#hasGroundSurface">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#isGroundSurfaceOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airfield"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Runway"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Taxiway"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#hasManufacturer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#hasManufacturer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#Manufacturer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#hasPosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#hasPosition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#GroundSurface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#isGroundSurfaceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#isGroundSurfaceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Runway"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Taxiway"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airfield"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#airfieldID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#airfieldID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airfield"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#airportName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#airportName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#class -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#class">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Aircraft"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#class"/>
+                        <owl:hasValue>narrow body</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#class"/>
+                        <owl:hasValue>wide body</owl:hasValue>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#elevation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#elevation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airfield"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#engineCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#engineCount">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateCapacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateCapacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Gate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Gate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#maintenanceStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#maintenanceStatus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Taxiway"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#maintenanceStatus"/>
+                        <owl:hasValue>locked</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#maintenanceStatus"/>
+                        <owl:hasValue>open</owl:hasValue>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#manufacturerName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#manufacturerName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#maxSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#maxSpeed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#passengersCapacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#passengersCapacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runwayLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runwayLength">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Runway"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runwayName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runwayName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Runway"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Taxiway"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Runway"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#type"/>
+                        <owl:hasValue>asphalt</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#type"/>
+                        <owl:hasValue>grass</owl:hasValue>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#usageType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#usageType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airfield"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#usageType"/>
+                        <owl:hasValue>charter</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#usageType"/>
+                        <owl:hasValue>civilian</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#usageType"/>
+                        <owl:hasValue>military</owl:hasValue>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#AirTrafficControllerTower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#AirTrafficControllerTower">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Aircraft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Aircraft">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftNumber"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airfield -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airfield">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#airfieldID"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airport">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Gate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Gate">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#GroundSurface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#GroundSurface">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#MaintenanceShop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#MaintenanceShop">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#PassengersTerminal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#PassengersTerminal">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Runway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Runway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#GroundSurface"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Taxiway"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Taxiway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Taxiway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#GroundSurface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#Manufacturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#Manufacturer"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftKMN20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftKMN20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Aircraft"/>
+        <hasManufacturer rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#manufacturerAirbus"/>
+        <hasPosition rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runway05C"/>
+        <aircraftNumber>KMN20</aircraftNumber>
+        <aircraftType>A380</aircraftType>
+        <class>wide body</class>
+        <engineCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</engineCount>
+        <maxSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</maxSpeed>
+        <passengersCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</passengersCapacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftSKU10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftSKU10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Aircraft"/>
+        <hasManufacturer rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#manufacturerAirbus"/>
+        <hasPosition rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runway05C"/>
+        <aircraftNumber>SKU10</aircraftNumber>
+        <aircraftType>A330</aircraftType>
+        <class>wide body</class>
+        <engineCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</engineCount>
+        <maxSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">900</maxSpeed>
+        <passengersCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</passengersCapacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftSTU30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftSTU30">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Aircraft"/>
+        <hasManufacturer rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#manfacturerBoeing"/>
+        <hasPosition rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runway06D"/>
+        <aircraftNumber>STU30</aircraftNumber>
+        <aircraftType>Boeing737</aircraftType>
+        <class>narrow body</class>
+        <engineCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</engineCount>
+        <maxSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</maxSpeed>
+        <passengersCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</passengersCapacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftUWD20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftUWD20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Aircraft"/>
+        <hasManufacturer rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#manfacturerBoeing"/>
+        <hasPosition rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayK"/>
+        <aircraftNumber>UWD20</aircraftNumber>
+        <aircraftType>Boeing787</aircraftType>
+        <engineCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</engineCount>
+        <maxSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</maxSpeed>
+        <passengersCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</passengersCapacity>
+        <type>narrow body</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#airfieldAlmaza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#airfieldAlmaza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airfield"/>
+        <hasGate rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateA1"/>
+        <hasGate rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateA2"/>
+        <hasGroundSurface rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runway05C"/>
+        <hasGroundSurface rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runway14D"/>
+        <hasGroundSurface rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayA"/>
+        <hasGroundSurface rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayM"/>
+        <airfieldID>HELA</airfieldID>
+        <elevation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</elevation>
+        <type>military</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#airfieldCairo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#airfieldCairo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airfield"/>
+        <hasGate rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateB1"/>
+        <hasGate rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateB2"/>
+        <hasGate rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateC1"/>
+        <hasGroundSurface rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runway02E"/>
+        <hasGroundSurface rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runway06D"/>
+        <hasGroundSurface rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayB"/>
+        <hasGroundSurface rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayK"/>
+        <airfieldID>CAI</airfieldID>
+        <elevation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</elevation>
+        <usageType>civilian</usageType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#airportAlmaza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#airportAlmaza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airport"/>
+        <airportName>Almaza Airport</airportName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#airportCairo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#airportCairo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airport"/>
+        <airportName>Cairo International Airport</airportName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateA1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateA1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Gate"/>
+        <compatibleWith rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftKMN20"/>
+        <compatibleWith rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftSKU10"/>
+        <gateCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350</gateCapacity>
+        <gateNumber>A1</gateNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateA2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateA2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Gate"/>
+        <compatibleWith rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftSTU30"/>
+        <compatibleWith rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftUWD20"/>
+        <gateCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</gateCapacity>
+        <gateNumber>A2</gateNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateB1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateB1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Gate"/>
+        <compatibleWith rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftSTU30"/>
+        <compatibleWith rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftUWD20"/>
+        <gateCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</gateCapacity>
+        <gateNumber>B1</gateNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateB2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateB2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Gate"/>
+        <gateCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</gateCapacity>
+        <gateNumber>B2</gateNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateC1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#gateC1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Gate"/>
+        <compatibleWith rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#aircraftUWD20"/>
+        <gateCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</gateCapacity>
+        <gateNumber>C1</gateNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#manfacturerBoeing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#manfacturerBoeing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#Manufacturer"/>
+        <manufacturerName>Boeing</manufacturerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#manufacturerAirbus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#manufacturerAirbus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#Manufacturer"/>
+        <manufacturerName>AirBus</manufacturerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runway02E -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runway02E">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Runway"/>
+        <hasExit rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayK"/>
+        <runwayLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</runwayLength>
+        <runwayName>02E</runwayName>
+        <type>asphalt</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runway05C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runway05C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Runway"/>
+        <hasExit rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayM"/>
+        <runwayLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</runwayLength>
+        <runwayName>05C</runwayName>
+        <type>grass</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runway06D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runway06D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Runway"/>
+        <hasExit rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayB"/>
+        <runwayLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</runwayLength>
+        <runwayName>06D</runwayName>
+        <type>asphalt</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runway14D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#runway14D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Runway"/>
+        <hasExit rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayA"/>
+        <runwayLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</runwayLength>
+        <runwayName>14D</runwayName>
+        <type>asphalt</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Taxiway"/>
+        <maintenanceStatus>open</maintenanceStatus>
+        <taxiwayName>A</taxiwayName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Taxiway"/>
+        <maintenanceStatus>locked</maintenanceStatus>
+        <taxiwayName>B</taxiwayName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Taxiway"/>
+        <maintenanceStatus>open</maintenanceStatus>
+        <taxiwayName>K</taxiwayName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#taxiwayM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Taxiway"/>
+        <maintenanceStatus>locked</maintenanceStatus>
+        <taxiwayName>M</taxiwayName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#AirTrafficControllerTower"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Aircraft"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airfield"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Airport"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#Gate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#GroundSurface"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#MaintenanceShop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-6#PassengersTerminal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeyad/ontologies/2022/11/untitled-ontology-7#Manufacturer"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
